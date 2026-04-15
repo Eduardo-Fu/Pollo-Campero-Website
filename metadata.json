@@ -1,0 +1,6 @@
+{
+  "name": "Pollo Campero - Sabor Único",
+  "description": "Aplicación oficial de Pollo Campero para pedidos a domicilio, pickup y programa de lealtad.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["Food Delivery", "Loyalty Program", "Real-time Tracking"]
+}
