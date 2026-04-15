@@ -12,7 +12,7 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({ cartCount, onOpenCart, onOpenMenu }) => {
   return (
     <nav className="sticky top-0 z-50 w-full bg-white h-[80px] border-b-2 border-primary shadow-[0_4px_10px_rgba(0,0,0,0.05)]">
-      <div className="max-w-7xl mx-auto px-10 h-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 h-full">
         <div className="flex justify-between items-center h-full">
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="icon" className="lg:hidden" onClick={onOpenMenu}>
@@ -22,7 +22,7 @@ export const Navbar: React.FC<NavbarProps> = ({ cartCount, onOpenCart, onOpenMen
               <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-black text-xl">
                 C
               </div>
-              <span className="font-black text-[28px] hidden sm:block text-primary tracking-tighter">CAMPERO</span>
+              <span className="font-black text-[24px] sm:text-[28px] hidden sm:block text-primary tracking-tighter">CAMPERO</span>
             </div>
           </div>
 

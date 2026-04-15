@@ -15,6 +15,8 @@ export default function App() {
   const [selectedProduct, setSelectedProduct] = React.useState<Product | null>(null);
   const [isProductModalOpen, setIsProductModalOpen] = React.useState(false);
 
+  const [activeCategory, setActiveCategory] = React.useState('combos');
+
   const handleAddToCart = (product: Product) => {
     if (product.options && product.options.length > 0) {
       setSelectedProduct(product);
@@ -32,7 +34,10 @@ export default function App() {
 
       if (existingItemIndex > -1) {
         const newCart = [...prev];
-        newCart[existingItemIndex].quantity += 1;
+        newCart[existingItemIndex] = {
+          ...newCart[existingItemIndex],
+          quantity: newCart[existingItemIndex].quantity + 1
+        };
         return newCart;
       }
 
@@ -66,25 +71,43 @@ export default function App() {
         onOpenMenu={() => {}} 
       />
       
-      <div className="max-w-7xl mx-auto px-10 flex gap-10 py-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-6 lg:gap-10 py-6 lg:py-10">
         {/* Sidebar Navigation - Desktop */}
-        <aside className="hidden lg:block w-[200px] shrink-0 space-y-2">
-          <div className="p-4 bg-primary text-white rounded-[12px] font-bold flex items-center gap-3 cursor-pointer">
-            🍗 Menú
-          </div>
-          <div className="p-4 hover:bg-[#FFF5F0] rounded-[12px] font-bold flex items-center gap-3 cursor-pointer text-gray-700 transition-colors">
+        <aside className="hidden lg:block w-[200px] shrink-0 space-y-2 sticky top-[100px] h-fit">
+          <div 
+            className={`p-4 rounded-[12px] font-bold flex items-center gap-3 cursor-pointer transition-colors ${activeCategory === 'combos' ? 'bg-primary text-white' : 'hover:bg-[#FFF5F0] text-gray-700'}`}
+            onClick={() => { setActiveCategory('combos'); document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' }); }}
+          >
             📦 Combos
           </div>
-          <div className="p-4 hover:bg-[#FFF5F0] rounded-[12px] font-bold flex items-center gap-3 cursor-pointer text-gray-700 transition-colors">
+          <div 
+            className={`p-4 rounded-[12px] font-bold flex items-center gap-3 cursor-pointer transition-colors ${activeCategory === 'familiares' ? 'bg-primary text-white' : 'hover:bg-[#FFF5F0] text-gray-700'}`}
+            onClick={() => { setActiveCategory('familiares'); document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' }); }}
+          >
+            🍗 Familiares
+          </div>
+          <div 
+            className={`p-4 rounded-[12px] font-bold flex items-center gap-3 cursor-pointer transition-colors ${activeCategory === 'desayunos' ? 'bg-primary text-white' : 'hover:bg-[#FFF5F0] text-gray-700'}`}
+            onClick={() => { setActiveCategory('desayunos'); document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' }); }}
+          >
             ☕ Desayunos
           </div>
-          <div className="p-4 hover:bg-[#FFF5F0] rounded-[12px] font-bold flex items-center gap-3 cursor-pointer text-gray-700 transition-colors">
+          <div 
+            className={`p-4 rounded-[12px] font-bold flex items-center gap-3 cursor-pointer transition-colors ${activeCategory === 'postres' ? 'bg-primary text-white' : 'hover:bg-[#FFF5F0] text-gray-700'}`}
+            onClick={() => { setActiveCategory('postres'); document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' }); }}
+          >
             🍦 Postres
           </div>
-          <div className="p-4 hover:bg-[#FFF5F0] rounded-[12px] font-bold flex items-center gap-3 cursor-pointer text-gray-700 transition-colors">
+          <div 
+            className={`p-4 rounded-[12px] font-bold flex items-center gap-3 cursor-pointer transition-colors ${activeCategory === 'bebidas' ? 'bg-primary text-white' : 'hover:bg-[#FFF5F0] text-gray-700'}`}
+            onClick={() => { setActiveCategory('bebidas'); document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' }); }}
+          >
             🥤 Bebidas
           </div>
-          <div className="p-4 hover:bg-[#FFF5F0] rounded-[12px] font-bold flex items-center gap-3 cursor-pointer text-gray-700 transition-colors">
+          <div 
+            className="p-4 hover:bg-[#FFF5F0] rounded-[12px] font-bold flex items-center gap-3 cursor-pointer text-gray-700 transition-colors"
+            onClick={() => document.getElementById('sucursales')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             📍 Sucursales
           </div>
         </aside>
@@ -93,25 +116,29 @@ export default function App() {
           <Hero />
           
           <div id="menu">
-            <MenuSection onAddToCart={handleAddToCart} />
+            <MenuSection 
+              onAddToCart={handleAddToCart} 
+              activeCategory={activeCategory}
+              setActiveCategory={setActiveCategory}
+            />
           </div>
           
           <LoyaltyCard />
           
           {/* Locations Section Placeholder */}
-          <section className="py-16 bg-white rounded-[20px] overflow-hidden shadow-sm border border-gray-200">
-            <div className="px-10">
+          <section id="sucursales" className="py-10 lg:py-16 bg-white rounded-[20px] overflow-hidden shadow-sm border border-gray-200">
+            <div className="px-6 lg:px-10">
               <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-                <div className="mb-12 lg:mb-0">
-                  <h2 className="text-3xl font-black text-gray-900 mb-6">Estamos más cerca de lo que crees</h2>
-                  <p className="text-gray-600 mb-10">
+                <div className="mb-8 lg:mb-0 text-center lg:text-left">
+                  <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-4 sm:mb-6">Estamos más cerca de lo que crees</h2>
+                  <p className="text-sm sm:text-base text-gray-600 mb-8 sm:mb-10">
                     Con más de 300 ubicaciones en toda la región, siempre hay un Pollo Campero listo para recibirte.
                   </p>
-                  <Button className="bg-primary text-white rounded-full px-8 h-12 font-bold uppercase tracking-wider">
+                  <Button className="bg-primary text-white rounded-full px-8 h-12 font-bold uppercase tracking-wider w-full sm:w-auto">
                     Buscar Sucursal
                   </Button>
                 </div>
-                <div className="relative h-[300px] rounded-[15px] overflow-hidden shadow-inner bg-gray-200">
+                <div className="relative h-[250px] sm:h-[300px] rounded-[15px] overflow-hidden shadow-inner bg-gray-200">
                   <img 
                     src="https://picsum.photos/seed/map/1200/800" 
                     alt="Map Placeholder" 
