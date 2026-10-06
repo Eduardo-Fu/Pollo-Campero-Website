@@ -1,118 +1,140 @@
 <div align="center">
-  <img width="1200" height="475" alt="Pollo Campero Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <img width="100%" style="border-radius: 16px; max-height: 420px; object-fit: cover;" alt="Pollo Campero Carátula" src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=1200&h=480&q=80" />
 
-  # 🍗 Pollo Campero - Experiencia Digital
+  # 🍗 POLLO CAMPERO — EXPERIENCIA DIGITAL
+  ### *¡Sabor tierno, jugoso y crujiente desde 1971!*
 
-  **Plataforma web moderna y responsiva para pedidos en línea (Delivery / Pickup), personalización de productos y programa de lealtad.**
-
-  [![Live Preview](https://img.shields.io/badge/Demo%20en%20Vivo-Visitar%20App-FF6319?style=for-the-badge&logo=google-chrome&logoColor=white)](https://ais-pre-pdqmu6hsz54kgdbzls7omv-651500077203.us-east1.run.app)
-  [![AI Studio](https://img.shields.io/badge/Google%20AI%20Studio-Ver%20Applet-FFD200?style=for-the-badge&logo=google&logoColor=black)](https://ai.studio/apps/e465cf28-af2f-43ba-8f57-7e1eec034060)
-  [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Automated%20Deploy-008248?style=for-the-badge&logo=github&logoColor=white)](#-despliegue-en-github-pages)
+  Plataforma web moderna y de alta conversión para pedidos en línea (**Delivery / Pickup**), personalización detallada de combos, carrito dinámico y programa de lealtad.
 
   <br />
 
-  [![React](https://img.shields.io/badge/React-19.0-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+  [![Demo en Vivo](https://img.shields.io/badge/🌐_Demo_en_Vivo-Visitar_Aplicación-FF6319?style=for-the-badge&logo=google-chrome&logoColor=white)](https://ais-pre-pdqmu6hsz54kgdbzls7omv-651500077203.us-east1.run.app)
+  [![AI Studio](https://img.shields.io/badge/⚡_Google_AI_Studio-Ver_Proyecto-FFD200?style=for-the-badge&logo=google&logoColor=black)](https://ai.studio/apps/e465cf28-af2f-43ba-8f57-7e1eec034060)
+  [![GitHub Pages](https://img.shields.io/badge/🚀_GitHub_Pages-Ver_en_Línea-008248?style=for-the-badge&logo=github&logoColor=white)](https://eduardo-fu.github.io/Pollo-Campero-Website/)
+
+  <br />
+
+  [![React 19](https://img.shields.io/badge/React-19.0-61DAFB?logo=react&logoColor=black)](https://react.dev/)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-  [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-v4.0-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+  [![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4.0-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
   [![Vite](https://img.shields.io/badge/Vite-6.2-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+  [![License](https://img.shields.io/badge/Licencia-MIT-green.svg)](LICENSE)
 </div>
 
 ---
 
-## 🌐 Enlaces de Vista Previa (Live Preview)
+## 🌐 Enlaces de Acceso y Vista Previa
 
-Puedes probar la aplicación interactiva directamente sin necesidad de instalar nada en tu computadora:
-
-* 🚀 **[Abrir Aplicación en Vivo (Shared Preview)](https://ais-pre-pdqmu6hsz54kgdbzls7omv-651500077203.us-east1.run.app)**
-* 🛠️ **[Ver proyecto en Google AI Studio](https://ai.studio/apps/e465cf28-af2f-43ba-8f57-7e1eec034060)**
-
----
-
-## ✨ Funcionalidades Principales
-
-| Funcionalidad | Descripción |
-| :--- | :--- |
-| 🍗 **Menú Interactivo** | Navegación por categorías: **Combos**, **Menús Familiares**, **Desayunos**, **Postres** y **Bebidas**. Carrusel y barra horizontal desplazable optimizada para pantallas táctiles y escritorio. |
-| ⚙️ **Personalización de Pedido** | Modal interactivo para configurar piezas de pollo (pechuga, cuadril, tradicional o extra crujiente), sabores de bebidas y aderezos antes de agregar al carrito. |
-| 🛒 **Carrito Dinámico (Drawer)** | Panel lateral deslizable con cálculo en tiempo real de subtotal, costo de envío y total, controles incrementales (`+` / `-`), eliminación de productos y resumen detallado. |
-| 💳 **Flujo de Pago y Confirmación** | Botón interactivo de **"CONTINUAR PAGO"** que genera automáticamente un número de orden único (`#CP-XXXXXX`), tiempo estimado de entrega y confirmación de compra. |
-| 🛵 **Selector Delivery / Pickup** | Botón conmutable en la barra de navegación para alternar entre pedidos a domicilio o recogida en restaurante. |
-| 🎁 **Programa de Lealtad (Campero Puntos)** | Visualización de saldo de puntos (ej. 1,250 pts), barra de progreso para recompensas y canje de cupones promocionales. |
-| 📍 **Buscador de Sucursales** | Módulo de geolocalización y mapa informativo con acceso rápido a más de 300 puntos de venta y horarios. |
-| 📱 **100% Responsivo** | Interfaz adaptada a smartphones, tablets y monitores de alta resolución con diseño de la paleta oficial (*Vibrant Palette*). |
+| Entorno | Enlace | Estado |
+| :--- | :--- | :--- |
+| 🚀 **Demo en Vivo (Nube Cloud Run)** | [Abrir Aplicación en Vivo](https://ais-pre-pdqmu6hsz54kgdbzls7omv-651500077203.us-east1.run.app) | 🟢 Activo (100% Funcional) |
+| 📦 **GitHub Pages** | [https://eduardo-fu.github.io/Pollo-Campero-Website/](https://eduardo-fu.github.io/Pollo-Campero-Website/) | 🟡 Configurable vía Actions |
+| 🛠️ **Google AI Studio Applet** | [Ver Applet en AI Studio](https://ai.studio/apps/e465cf28-af2f-43ba-8f57-7e1eec034060) | 🟢 Activo |
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## ✅ Funcionalidades que SÍ Funcionan en este Momento
 
-- **Frontend:** [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
-- **Estilos:** [Tailwind CSS v4](https://tailwindcss.com/) con tokens de diseño personalizados
-- **Animaciones:** [Motion (Framer Motion)](https://motion.dev/)
-- **Iconografía:** [Lucide React](https://lucide.dev/)
-- **Herramienta de Construcción:** [Vite 6](https://vitejs.dev/)
+La aplicación cuenta con una suite completa de funcionalidades operativas de cara al usuario:
+
+- [x] **Menú Interactivo por Categorías:**
+  - Pestañas dinámicas para **Combos**, **Menús Familiares**, **Desayunos**, **Postres** y **Bebidas**.
+  - Barra de categorías con desplazamiento horizontal táctil (*touch swipe / snap-scroll*) en smartphones y botones de acceso directo en escritorio.
+  - Filtro instantáneo de productos sin recargar la página.
+
+- [x] **Modal de Personalización de Productos:**
+  - Selección de opciones obligatorias y adicionales (ej. elección de refresco: *Pepsi, 7Up, Mirinda, Mountain Dew*).
+  - Selección de receta de pollo (*Tradicional o Extra Crujiente*) y tipos de piezas.
+  - Control de opciones predeterminadas e indicación clara de campos requeridos.
+
+- [x] **Carrito de Compras Dinámico (Slide Drawer):**
+  - Contador reactivo en tiempo real en la barra de navegación.
+  - Control de cantidades individual con botones **`+`** y **`-`**.
+  - Botón de papelera para eliminar productos específicos.
+  - Desglose financiero transparente: Subtotal, Costo de Envío ($2.50) y Total final.
+  - Sugerencia de compra cruzada (*upsell*) de postres en la parte inferior.
+
+- [x] **Flujo de Pago y Confirmación de Pedido:**
+  - Al presionar **"CONTINUAR PAGO"**, el sistema genera de inmediato un ticket de compra confirmado.
+  - Asignación de código de orden aleatorio único (ej. `#CP-492104`).
+  - Estimación de entrega (25-35 minutos).
+
+- [x] **Selector Delivery / Pickup:**
+  - Conmutador interactivo en el encabezado superior para alternar fácilmente entre entrega a domicilio o recoger en restaurante.
+
+- [x] **Módulo de Lealtad (Campero Puntos):**
+  - Visualización del saldo actual (1,250 puntos acumulados).
+  - Barra visual con la meta para canjear productos (ej. *"Te faltan 250 pts para un Flan"*).
+
+- [x] **Localizador de Sucursales:**
+  - Tarjeta de ubicación y mapa visual con llamada a la acción para consultar las más de 300 sucursales disponibles.
+
+- [x] **Diseño Responsivo Total & Paleta "Vibrant":**
+  - Totalmente adaptado a pantallas pequeñas (smartphones desde 320px), tablets y pantallas ultra-anchas.
+  - Colores de marca exactos: Naranja Campero (`#FF6319`), Amarillo Dorado (`#FFD200`), Verde Acento (`#008248`) y fondos cálidos.
 
 ---
 
-## 🚀 Cómo Ejecutar Localmente
+## 🔮 Próximas Actualizaciones (Roadmap)
 
-### Requisitos Previos
-- [Node.js](https://nodejs.org/) (versión 18 o superior recomendada)
-- `npm`, `pnpm` o `yarn`
+Características planificadas para las siguientes versiones:
 
-### Pasos:
-
-1. **Clonar el repositorio:**
-   ```bash
-   git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
-   cd TU_REPOSITORIO
-   ```
-
-2. **Instalar dependencias:**
-   ```bash
-   npm install
-   ```
-
-3. **Ejecutar en modo de desarrollo:**
-   ```bash
-   npm run dev
-   ```
-   Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
-
-4. **Compilar para producción:**
-   ```bash
-   npm run build
-   ```
-   Los archivos listos para producción se generarán en la carpeta `dist/`.
+1. 💳 **Integración de Pasarela de Pagos Real:**
+   - Conexión con procesadores de pago seguros (VisaNet, CyberSource, BAC Credomatic).
+   - Soporte para pagos rápidos con Apple Pay y Google Pay.
+2. 📍 **Geolocalización GPS en Tiempo Real:**
+   - Integración con Google Maps API para autocompletar la dirección de entrega del cliente.
+   - Cálculo de cobertura y asignación automática del pedido al restaurante más cercano.
+3. 👤 **Autenticación y Perfil de Usuario:**
+   - Inicio de sesión con Google o número telefónico (SMS OTP).
+   - Guardado de direcciones favoritas (*Casa, Oficina, etc.*) e historial de pedidos previos para reordenar en 1 clic.
+4. 🛵 **Rastreo de Repartidor en Vivo (Live Tracker):**
+   - Vista en tiempo real del repartidor en camino mediante WebSockets.
+5. 🎟️ **Sistema de Cupones Promocionales:**
+   - Campo para aplicar códigos de descuento en el carrito (ej. `CAMPERO20`, `ENVIOGRATIS`).
+6. 🧾 **Facturación Electrónica Automática (FEL):**
+   - Opción para ingresar NIT o Consumidor Final y descarga de factura en PDF.
 
 ---
 
-## 📦 Despliegue en GitHub Pages
+## 🚀 Cómo Activar GitHub Pages (Solución al Pantallazo en Blanco)
 
-El proyecto ya está 100% configurado para GitHub Pages con **dos métodos disponibles**:
+Si al entrar a tu enlace de GitHub Pages ves la pantalla en blanco, se debe a que GitHub Pages intenta mostrar el archivo `index.html` con código TypeScript (`src/main.tsx`) sin haberlo compilado primero.
 
-### Opción 1: Automático con GitHub Actions (Recomendado)
-El repositorio ya incluye el workflow en `.github/workflows/deploy.yml`:
-1. Sube tu código a GitHub:
-   ```bash
-   git remote add origin https://github.com/TU-USUARIO/TU-REPOSITORIO.git
-   git push -u origin main
-   ```
-2. En GitHub, ve a **Settings** > **Pages**.
-3. En **Build and deployment > Source**, selecciona **GitHub Actions**.
-4. ¡Listo! Se desplegará automáticamente en:
-   ```
-   https://<tu-usuario>.github.io/<nombre-del-repo>/
-   ```
+### Paso a paso para arreglarlo:
 
-### Opción 2: Con el comando `npm run deploy` (gh-pages)
-Si prefieres desplegar directamente desde la terminal con una sola línea:
+1. Ve a tu repositorio en GitHub: **[Eduardo-Fu/Pollo-Campero-Website](https://github.com/Eduardo-Fu/Pollo-Campero-Website)**.
+2. Haz clic en la pestaña **Settings** (Configuración) arriba a la derecha.
+3. En el menú de la izquierda, selecciona **Pages**.
+4. En el apartado **Build and deployment**:
+   - Haz clic en el selector que dice **`Deploy from a branch`**.
+   - Cambia esa opción por **`GitHub Actions`**.
+5. ¡Listo! El archivo `.github/workflows/deploy.yml` que ya está en tu repositorio compilará automáticamente el proyecto y lo pondrá en vivo en:
+   👉 **`https://eduardo-fu.github.io/Pollo-Campero-Website/`**
+
+> **Verificación:** Puedes ir a la pestaña **Actions** de tu repositorio para ver el progreso del despliegue en tiempo real (~40 segundos).
+
+---
+
+## 💻 Instalación y Desarrollo Local
+
 ```bash
-npm run deploy
+# 1. Clonar el repositorio
+git clone https://github.com/Eduardo-Fu/Pollo-Campero-Website.git
+cd Pollo-Campero-Website
+
+# 2. Instalar las dependencias
+npm install
+
+# 3. Iniciar el servidor de desarrollo local
+npm run dev
+
+# 4. Compilar para producción
+npm run build
 ```
-Este comando compilará el proyecto (`dist/`) y subirá los archivos generados a la rama `gh-pages` de tu repositorio. En **Settings > Pages**, solo selecciona desplegar desde la rama `gh-pages` / `/ (root)`.
 
 ---
 
 <div align="center">
-  <sub>Desarrollado con ❤️ para la experiencia digital de Pollo Campero.</sub>
+  <sub>Desarrollado con pasión para la comunidad de Pollo Campero.</sub>
 </div>
