@@ -97,25 +97,6 @@ Características planificadas para las siguientes versiones:
 
 ---
 
-## 🚀 Cómo Activar GitHub Pages (Solución al Pantallazo en Blanco)
-
-Si al entrar a tu enlace de GitHub Pages ves la pantalla en blanco, se debe a que GitHub Pages intenta mostrar el archivo `index.html` con código TypeScript (`src/main.tsx`) sin haberlo compilado primero.
-
-### Paso a paso para arreglarlo:
-
-1. Ve a tu repositorio en GitHub: **[Eduardo-Fu/Pollo-Campero-Website](https://github.com/Eduardo-Fu/Pollo-Campero-Website)**.
-2. Haz clic en la pestaña **Settings** (Configuración) arriba a la derecha.
-3. En el menú de la izquierda, selecciona **Pages**.
-4. En el apartado **Build and deployment**:
-   - Haz clic en el selector que dice **`Deploy from a branch`**.
-   - Cambia esa opción por **`GitHub Actions`**.
-5. ¡Listo! El archivo `.github/workflows/deploy.yml` que ya está en tu repositorio compilará automáticamente el proyecto y lo pondrá en vivo en:
-   👉 **`https://eduardo-fu.github.io/Pollo-Campero-Website/`**
-
-> **Verificación:** Puedes ir a la pestaña **Actions** de tu repositorio para ver el progreso del despliegue en tiempo real (~40 segundos).
-
----
-
 ## 💻 Instalación y Desarrollo Local
 
 ```bash
