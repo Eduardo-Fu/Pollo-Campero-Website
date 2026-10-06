@@ -86,18 +86,30 @@ Puedes probar la aplicación interactiva directamente sin necesidad de instalar 
 
 ---
 
-## 📦 Despliegue en GitHub Pages (Automático)
+## 📦 Despliegue en GitHub Pages
 
-El repositorio incluye un flujo automatizado de **GitHub Actions** en `.github/workflows/deploy.yml`. Para activarlo en tu repositorio:
+El proyecto ya está 100% configurado para GitHub Pages con **dos métodos disponibles**:
 
-1. Ve a la pestaña **Settings** (Configuración) de tu repositorio en GitHub.
-2. En el menú lateral izquierdo, haz clic en **Pages**.
-3. En la sección **Build and deployment** > **Source**, selecciona:
-   **`GitHub Actions`**.
-4. ¡Listo! Cada vez que hagas `git push` a la rama `main` o `master`, GitHub Actions compilará y publicará la página web automáticamente en:
+### Opción 1: Automático con GitHub Actions (Recomendado)
+El repositorio ya incluye el workflow en `.github/workflows/deploy.yml`:
+1. Sube tu código a GitHub:
+   ```bash
+   git remote add origin https://github.com/TU-USUARIO/TU-REPOSITORIO.git
+   git push -u origin main
+   ```
+2. En GitHub, ve a **Settings** > **Pages**.
+3. En **Build and deployment > Source**, selecciona **GitHub Actions**.
+4. ¡Listo! Se desplegará automáticamente en:
    ```
    https://<tu-usuario>.github.io/<nombre-del-repo>/
    ```
+
+### Opción 2: Con el comando `npm run deploy` (gh-pages)
+Si prefieres desplegar directamente desde la terminal con una sola línea:
+```bash
+npm run deploy
+```
+Este comando compilará el proyecto (`dist/`) y subirá los archivos generados a la rama `gh-pages` de tu repositorio. En **Settings > Pages**, solo selecciona desplegar desde la rama `gh-pages` / `/ (root)`.
 
 ---
 
