@@ -28,7 +28,7 @@
 | Entorno | Enlace | Estado |
 | :--- | :--- | :--- |
 | 🚀 **Demo en Vivo (Nube Cloud Run)** | [Abrir Aplicación en Vivo](https://ais-pre-pdqmu6hsz54kgdbzls7omv-651500077203.us-east1.run.app) | 🟢 Activo (100% Funcional) |
-| 📦 **GitHub Pages** | [https://eduardo-fu.github.io/Pollo-Campero-Website/](https://eduardo-fu.github.io/Pollo-Campero-Website/) | 🟡 Configurable vía Actions |
+| 📦 **GitHub Pages** | [https://eduardo-fu.github.io/Pollo-Campero-Website/](https://eduardo-fu.github.io/Pollo-Campero-Website/) | 🟢 Activo |
 | 🛠️ **Google AI Studio Applet** | [Ver Applet en AI Studio](https://ai.studio/apps/e465cf28-af2f-43ba-8f57-7e1eec034060) | 🟢 Activo |
 
 ---
